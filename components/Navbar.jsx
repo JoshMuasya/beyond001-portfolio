@@ -60,13 +60,6 @@ const Navbar = () => {
                         <Link href="#portfolio" onClick={() => handleClick('portfolio')}>Portfolio</Link>
                     </li>
 
-                    {/* <li className={
-                        activePage === "about" ? "l:text-s l:hover:text-sm text-xs hover:text-xxs font-bold hover:text-purple ease-in duration-300 hover:ease-in hover:duration-300 border-b-4 border-purple" 
-                        : "l:text-s l:hover:text-sm text-xs hover:text-xxs font-bold hover:text-purple ease-in duration-300 hover:ease-in hover:duration-300"
-                    }>
-                        <Link href="/about/About" onClick={() => handleClick('about')}>About</Link>
-                    </li> */}
-
                     <li className={
                         activePage === "gallery" ? "l:text-s l:hover:text-sm text-xs hover:text-xxs font-bold hover:text-purple ease-in duration-300 hover:ease-in hover:duration-300 border-b-4 border-purple" 
                         : "l:text-s l:hover:text-sm text-xs hover:text-xxs font-bold hover:text-purple ease-in duration-300 hover:ease-in hover:duration-300"
