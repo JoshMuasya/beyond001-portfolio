@@ -1,0 +1,20 @@
+<div className='p-5 relative'>
+                <Image 
+                  src={Pic1}
+                  alt='Picture 1'
+                  width={600}
+                  height={600}
+                  onMouseOver={() => handleMouseOver}
+                  onMouseOut={handleMouseOut}
+                />
+                {IsHovering && (
+                  <div>
+                    <div className='absolute inset-0 bg-overblack opacity-90 z-10' />
+
+                    <div className='absolute inset-y-1/3 left-1/3 text-ml font-bold text-center text-thistle'>
+                        <h3>Event 1</h3>
+                      <AddCircleOutlineIcon />
+                    </div>
+                  </div>
+                )}
+              </div>

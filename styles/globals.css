@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heropic {
+  background-image: url(../public/images/Heropic.jpg);
+  background-repeat: no-repeat;
+}
