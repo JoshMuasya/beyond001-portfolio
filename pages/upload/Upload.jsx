@@ -75,7 +75,7 @@ const Upload = () => {
           >
             Post
           </Button>
-        <Link href='./register' className='p-5'>
+        <Link href='../Register' className='p-5'>
           Add User
         </Link>
 
