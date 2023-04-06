@@ -15,7 +15,7 @@ const Footer = () => {
       {/* Top */}
       <div className='py-5'>
         <h3 className='font-bold text-m md:text-ml l:text-l lg:text-lg pb-3'>Follow me on Instagram</h3>
-        <p className='text-center duration-500 hover:duration-500 text-purple hover:text-dpurple text-s md:text-sm l:text-m lg:text-ml hover:text-sm'><Link href="/">@Beyond_001</Link></p>
+        <p className='text-center duration-500 hover:duration-500 text-purple hover:text-dpurple text-s md:text-sm l:text-m lg:text-ml hover:text-sm'><a href="https://www.instagram.com/beyond001photography/">@beyond001photography</a></p>
       </div>
 
       {/* bottom */}

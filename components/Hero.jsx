@@ -23,7 +23,7 @@ const Hero = () => (
                 <div className='mb-4'>
                     <p className='text-white text-s l:text-m'>
                         I photograph very uniquley and instinctively. <br />
-                        I do not follow any styles, philosophies or teachers.
+                        We never miss a moment!!
                     </p>
                 </div>
 
