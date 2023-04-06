@@ -9,7 +9,7 @@ const LoginComponent = () => {
 
   const [credentials, setCredentials] = useState({});
 
-  const login = async () => {
+  const Login = async () => {
     try {
       let res = await LoginAPI(credentials.email, credentials.password)
       toast.success('Signed in Successfully', {
@@ -52,7 +52,7 @@ const LoginComponent = () => {
           }
         />
         <Button
-          onClick={login}
+          onClick={Login}
           variant="outlined"
           startIcon={<LoginIcon />}
         >
