@@ -53,8 +53,8 @@ const Upload = () => {
   }, [])
   const {getRootProps, getInputProps} = useDropzone({onDrop})
 
-  const imagesSelected = selectedImages?.map(file => (
-    <div>
+  const imagesSelected = selectedImages?.map((file, index) => (
+    <div key={index}>
       <img src={file.preview} style={{width:"200px"}} alt="" />
     </div>
   ))

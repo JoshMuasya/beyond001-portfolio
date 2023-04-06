@@ -52,8 +52,8 @@ const Portfolio = () => {
                         adaptiveHeight={true}
                       >
                         {
-                          event.images?.map(file => (
-                            <div className='relative w-full h-96'> 
+                          event.images?.map((file, index) => (
+                            <div key={index} className='relative w-full h-96'> 
                               <Image 
                                 src={file}
                                 fill

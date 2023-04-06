@@ -3,7 +3,7 @@ import LoginComponent from '@/components/LoginComponent';
 import { auth } from '@/firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
 
-const login = () => {
+const Login = () => {
   useEffect(() => {
     onAuthStateChanged(auth, res => {
       if (res?.accessToken) {

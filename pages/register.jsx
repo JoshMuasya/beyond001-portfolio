@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { auth } from '@/firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
 
-const register = () => {
+const Register = () => {
   useEffect(() => {
     onAuthStateChanged(auth, res => {
       if (!res?.accessToken) {
-        window.location.href = '../login';
+        window.location.href = '../Login';
       }
     })
   }, [])
