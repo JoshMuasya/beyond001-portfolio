@@ -13,7 +13,7 @@ const Upload = () => {
   useEffect(() => {
     onAuthStateChanged(auth, res => {
       if (!res?.accessToken) {
-        window.location.href = '../login';
+        window.location.href = '../Login';
       }
     })
   }, [])
