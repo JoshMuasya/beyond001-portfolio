@@ -4,9 +4,12 @@ import TextField from '@mui/material/TextField';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import Button from '@mui/material/Button';
 import { toast } from 'react-toastify';
+import { useRouter } from 'next/router';
 
 const RegisterComponent = () => {
     const [credentials, setCredentials] = useState({});
+
+    const router = useRouter()
 
     const register = () => {
       try {
@@ -15,6 +18,10 @@ const RegisterComponent = () => {
           position: 'top-center',
           autoClose: 4000,
         })
+        credentials.email = ''
+        credentials.password = ''
+
+        router.push('/Login')
       } catch (err) {
         toast.error("Check your Email and Password!!", {
           position: 'top-center',
